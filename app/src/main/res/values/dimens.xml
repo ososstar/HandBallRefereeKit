@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="thick_bar">1dp</dimen>
+    <dimen name="viewgroup0">0dp</dimen>
+    <dimen name="marginOf16dp">16dp</dimen>
+    <dimen name="smallButton">40dp</dimen>
+    <dimen name="paddingOf16dp">16dp</dimen>
+    <dimen name="scoreText">56sp</dimen>
+</resources>

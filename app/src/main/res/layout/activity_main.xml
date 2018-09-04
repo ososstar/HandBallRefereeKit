@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="@dimen/viewgroup0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/paddingOf16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/team_a"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                app:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/team_a_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginOf16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/value0"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="@dimen/scoreText"
+                app:fontFamily="sans-serif-medium" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/smallButton"
+                android:onClick="teamA_AddScorePoint"
+                android:text="@string/score" />
+
+            <TextView
+                android:id="@+id/team_a_fouls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginOf16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/value0"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                app:fontFamily="sans-serif-medium" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/smallButton"
+                android:onClick="TeamA_AddFoul"
+                android:text="@string/foul" />
+
+            <TextView
+                android:id="@+id/team_a_ycard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginOf16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/value0"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                app:fontFamily="sans-serif-medium" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/smallButton"
+                android:onClick="TeamA_AddYellowCard"
+                android:text="@string/yellow_card" />
+
+            <TextView
+                android:id="@+id/team_a_rcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginOf16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/value0"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                app:fontFamily="sans-serif-medium" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/smallButton"
+                android:onClick="TeamA_AddRedCard"
+                android:text="@string/red_card" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="@dimen/thick_bar"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/marginOf16dp"
+            android:background="#50A3BE" />
+
+        <LinearLayout
+            android:layout_width="@dimen/viewgroup0"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:padding="@dimen/paddingOf16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="@string/team_b"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceMedium"
+                app:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/team_b_score"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginOf16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/value0"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textSize="@dimen/scoreText"
+                app:fontFamily="sans-serif-medium" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/smallButton"
+                android:onClick="teamB_AddScorePoint"
+                android:text="@string/score" />
+
+            <TextView
+                android:id="@+id/team_b_fouls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginOf16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/value0"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                app:fontFamily="sans-serif-medium" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/smallButton"
+                android:onClick="teamB_AddFoul"
+                android:text="@string/foul" />
+
+            <TextView
+                android:id="@+id/team_b_ycard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginOf16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/value0"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                app:fontFamily="sans-serif-medium" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/smallButton"
+                android:onClick="teamB_addYellowCard"
+                android:text="@string/yellow_card" />
+
+            <TextView
+                android:id="@+id/team_b_rcard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginOf16dp"
+                android:gravity="center_horizontal"
+                android:text="@string/value0"
+                android:textAllCaps="true"
+                android:textAppearance="?android:textAppearanceLarge"
+                app:fontFamily="sans-serif-medium" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/smallButton"
+                android:onClick="teamB_addRedCard"
+                android:text="@string/red_card" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/resetAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="resetAll"
+        android:text="@string/reset" />
+
+</RelativeLayout>
